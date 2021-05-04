@@ -122,34 +122,34 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-holaMundo.out \
+Experimento1.out \
 
 EXE_OUTPUTS__QUOTED += \
-"holaMundo.out" \
+"Experimento1.out" \
 
 BIN_OUTPUTS += \
-holaMundo.hex \
+Experimento1.hex \
 
 BIN_OUTPUTS__QUOTED += \
-"holaMundo.hex" \
+"Experimento1.hex" \
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "holaMundo.out"
+	@$(MAKE) --no-print-directory -Onone "Experimento1.out"
 
 # Tool invocations
-holaMundo.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
+Experimento1.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"holaMundo.map" --heap_size=0 --stack_size=512 -i"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="holaMundo_linkInfo.xml" --rom_model -o "holaMundo.out" $(ORDERED_OBJS)
+	"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=TARGET_IS_TM4C123_RB1 --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Experimento1.map" --heap_size=0 --stack_size=512 -i"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/lib" -i"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Experimento1_linkInfo.xml" --rom_model -o "Experimento1.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
-holaMundo.hex: $(EXE_OUTPUTS)
+Experimento1.hex: $(EXE_OUTPUTS)
 	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: Arm Hex Utility'
-	"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armhex" --diag_wrap=off -o "holaMundo.hex" $(EXE_OUTPUTS__QUOTED)
+	"D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/bin/armhex" --diag_wrap=off -o "Experimento1.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
