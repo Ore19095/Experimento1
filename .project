@@ -30,6 +30,11 @@
 			<type>1</type>
 			<locationURI>TIVAWARE_INSTALL/driverlib/ccs/Debug/driverlib.lib</locationURI>
 		</link>
+		<link>
+			<name>hw_memmap.h</name>
+			<type>1</type>
+			<locationURI>TIVAWARE_INSTALL/inc/hw_memmap.h</locationURI>
+		</link>
 	</linkedResources>
 	<variableList>
 		<variable>

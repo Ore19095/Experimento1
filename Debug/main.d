@@ -12,7 +12,10 @@ main.obj: D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/inc
 main.obj: D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/machine/_stdint.h
 main.obj: D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/sys/_stdint.h
 main.obj: D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool.h
+main.obj: D:/TivaWare/inc/hw_memmap.h
+main.obj: D:/TivaWare/driverlib/debug.h
 main.obj: D:/TivaWare/driverlib/sysctl.h
+main.obj: D:/TivaWare/driverlib/gpio.h
 
 ../main.c:
 
@@ -38,5 +41,11 @@ D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/sys/_
 
 D:/programas/codeComposer/ccs/tools/compiler/ti-cgt-arm_20.2.5.LTS/include/stdbool.h:
 
+D:/TivaWare/inc/hw_memmap.h:
+
+D:/TivaWare/driverlib/debug.h:
+
 D:/TivaWare/driverlib/sysctl.h:
+
+D:/TivaWare/driverlib/gpio.h:
 
