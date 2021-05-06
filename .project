@@ -36,10 +36,4 @@
 			<locationURI>TIVAWARE_INSTALL/inc/hw_memmap.h</locationURI>
 		</link>
 	</linkedResources>
-	<variableList>
-		<variable>
-			<name>TIVAWARE_INSTALL</name>
-			<value>file:/D:/TivaWare</value>
-		</variable>
-	</variableList>
 </projectDescription>
