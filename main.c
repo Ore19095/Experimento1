@@ -4,7 +4,6 @@
 #include "inc/hw_memmap.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/gpio.h"
-#include "driverlib/systick.h"
 
 void delay();
 void semaforo();
